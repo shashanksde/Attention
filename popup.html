@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ad Attention Score</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="popup">
+    <header class="header">
+      <h1 class="title">Ad Attention Score</h1>
+      <p class="subtitle">Time and interaction with ads</p>
+    </header>
+    <main class="main">
+      <div class="score-card">
+        <div class="score-value" id="totalScore">0</div>
+        <div class="score-label">Total score</div>
+        <p class="score-hint">Higher = more attention to ads (view time, hover, clicks)</p>
+      </div>
+      <section class="section">
+        <h2 class="section-title">Recent activity</h2>
+        <ul class="activity-list" id="activityList"></ul>
+        <p class="empty" id="emptyState">No ad attention recorded yet. Browse normally — we'll track when you view or interact with ads.</p>
+      </section>
+      <div class="actions">
+        <button type="button" class="btn btn-secondary" id="resetBtn">Reset score</button>
+      </div>
+    </main>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
